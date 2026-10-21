@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Carta y contacto · Picoteo's</title>
+  <meta name="description" content="La carta completa de Picoteo's por secciones: complementos, carnes, platos fríos, croquetas, guisos, pescado frito, pastas, bocatas y postres. Escríbenos tu opinión, duda o sugerencia.">
+  <meta name="theme-color" content="#632e22">
+  <link rel="icon" href="assets/svg/bolsa-pedido.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Playfair+Display:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="page-carta">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" data-nav>
+    <nav class="nav__bar" aria-label="Principal">
+      <ul class="nav__links">
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carta">Carta</a></li>
+        <li><a href="#plan">About</a></li>
+      </ul>
+      <button class="nav__menu" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle>
+        <img src="assets/svg/menu.svg" width="20" height="20" alt="">
+      </button>
+    </nav>
+  </header>
+
+  <div class="mmenu" id="menu-movil" data-menu hidden>
+    <div class="mmenu__inner">
+      <ul class="mmenu__links">
+        <li><a href="#carta" data-menu-link>Carta</a></li>
+        <li><a href="#visitanos" data-menu-link>Horario</a></li>
+        <li><a href="#ubicacion" data-menu-link>Dónde estamos</a></li>
+        <li><a href="#contacto" data-menu-link>Contacto</a></li>
+      </ul>
+      <a class="btn btn--orange btn--block mmenu__call" href="tel:+34955792208">
+        <img src="assets/svg/phone-marron-m.svg" width="18" height="18" alt="">
+        <span>Llamar: 95 579 22 08</span>
+      </a>
+    </div>
+  </div>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero grid-dark" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <div class="rating" data-hero-item>
+            <img class="rating__g" src="assets/svg/google.svg" width="14" height="14" alt="Google">
+            <span class="rating__stars" aria-label="4,5 de 5 estrellas">
+              <img src="assets/svg/star.svg" alt=""><img src="assets/svg/star.svg" alt=""><img src="assets/svg/star.svg" alt=""><img src="assets/svg/star.svg" alt=""><img class="half" src="assets/svg/star-half.svg" alt="">
+            </span>
+            <span class="rating__txt">+ 500 opiniones</span>
+          </div>
+          <h1 class="hero__title" id="hero-title" data-split>
+            <span class="line">Tu pedido,</span>
+            <span class="line">listo para llevar.</span>
+          </h1>
+          <p class="hero__sub" data-hero-item>Elige de nuestra carta, llámanos y recoge <br class="d-only">tu pedido recién hecho.</p>
+
+          <div class="hero__mvisual m-only" data-hero-item>
+            <img class="hero__mfondo" src="assets/img/hero-bocadillo.png" width="1200" height="969" alt="Bocadillo de pollo con jamón, pimientos y tomate">
+            <span class="hero__mplato hero__mplato--b" aria-hidden="true"><span><img src="assets/img/hero-patata-1.png" alt=""></span></span>
+            <span class="hero__mplato hero__mplato--a" aria-hidden="true"><span><img src="assets/img/hero-patata-2.png" alt=""></span></span>
+          </div>
+
+          <a class="btn hero__cta" href="tel:+34955792208" data-hero-item>
+            <picture>
+              <source media="(max-width: 899px)" srcset="assets/svg/phone-verde.svg">
+              <img src="assets/svg/phone-hero.svg" width="20" height="20" alt="">
+            </picture>
+            <span>Llamar: 95 579 22 08</span>
+          </a>
+
+          <div class="ventajas m-only" data-hero-item>
+            <div class="ventaja"><strong>⏱ 15 min</strong><span>Tiempo de recogida</span></div>
+            <div class="ventaja"><strong>🥘 Casero</strong><span>Recién cocinado</span></div>
+          </div>
+          <p class="estado m-only" data-hero-item><span class="estado__dot" aria-hidden="true"></span>Aceptando pedidos · hasta las 22:30</p>
+        </div>
+
+        <div class="hero__visual d-only" data-parallax-root>
+          <div class="hero__sandwich" data-depth="0.6">
+            <img src="assets/img/hero-bocadillo.png" width="1200" height="969" alt="Bocadillo de pollo con jamón, pimientos y tomate">
+          </div>
+          <div class="hero__fry hero__fry--1" data-depth="1.6" aria-hidden="true"><div><span><img src="assets/img/hero-patata-1.png" alt=""></span></div></div>
+          <div class="hero__fry hero__fry--2" data-depth="2.2" aria-hidden="true"><div><span><img src="assets/img/hero-patata-2.png" alt=""></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FIRMA / LOGOTIPO ============ -->
+    <section class="firma" aria-label="Picoteo's">
+      <div class="firma__logo" data-logo-reveal>
+        <img src="assets/svg/logo.svg" width="1360" height="312" alt="Picoteo's">
+      </div>
+    </section>
+
+    <!-- ============ CARTA (listas por sección) ============ -->
+    <section class="lcarta grid-light scallop-top" id="carta" aria-labelledby="carta-title" data-carta-lista>
+      <div class="lcarta__box">
+        <header class="lcarta__head">
+          <h2 class="lcarta__title" id="carta-title" data-reveal>Nuestra carta</h2>
+          <p class="lcarta__lead" data-reveal>Todo lo que te apetece, a un vistazo.</p>
+          <div class="lcarta__chips" role="tablist" aria-label="Secciones de la carta" data-lista-chips data-reveal></div>
+          <p class="lcarta__note" data-reveal>Consulta ingredientes y alérgenos en el detalle de cada plato.</p>
+        </header>
+        <div class="lcarta__panel" id="lista-panel" role="tabpanel" data-lista-panel></div>
+        <div class="lcarta__info" data-reveal>
+          <strong>Tu seguridad, primero</strong>
+          <p>En nuestra cocina compartida, no podemos asegurar que los alimentos estén completamente libres de alérgenos. Si tienes alguna alergia o restricción alimentaria, por favor háznoslo saber antes de hacer tu pedido. La falta de información no implica que un plato esté exento de alérgenos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PEDIDO ============ -->
+    <section class="pedido grid-dark scallop-top" id="pedido" aria-labelledby="pedido-title">
+      <div class="pedido__inner">
+        <div class="pedido__bolsa" data-reveal data-sticker>
+          <picture>
+            <source media="(max-width: 899px)" srcset="assets/svg/bolsa-pedido-m.svg">
+            <img src="assets/svg/bolsa-pedido.svg" width="194" height="185" alt="Bolsa de pedido Picoteo's">
+          </picture>
+        </div>
+        <p class="eyebrow" data-reveal>Pedido</p>
+        <h2 class="pedido__title" id="pedido-title" data-reveal>¿Ya sabes qué quieres?</h2>
+        <p class="pedido__sub" data-reveal><span class="d-only">Llama ahora y recoge tu pedido</span><span class="m-only">Llama ahora y tenemos tu pedido listo en 15 minutos.</span></p>
+        <a class="btn btn--orange pedido__btn" href="tel:+34955792208" data-reveal>
+          <picture>
+            <source media="(max-width: 899px)" srcset="assets/svg/phone-marron-m.svg">
+            <img src="assets/svg/phone-pedido.svg" width="20" height="20" alt="">
+          </picture>
+          <span class="d-only">95 579 22 08</span><span class="m-only">Llamar: 95 579 22 08</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ VISÍTANOS / HORARIO ============ -->
+    <section class="visit visit--v2" id="visitanos" aria-labelledby="visit-title">
+      <div class="visit__inner">
+        <header class="visit__head d-only">
+          <h2 class="visit__title" id="visit-title" data-reveal>Ven a visitarnos.</h2>
+          <p class="visit__addr" data-reveal><img src="assets/svg/pin.svg" width="18" height="18" alt="">Calle C/ Narciso Monturiol 15, Polígono Industrial El Cáñamo I</p>
+        </header>
+        <div class="visit__row">
+          <a class="visit__map d-only" href="https://www.google.com/maps/search/?api=1&amp;query=Picoteo%27s%2C%20Calle%20Narciso%20Monturiol%2015%2C%20Pol%C3%ADgono%20Industrial%20El%20C%C3%A1%C3%B1amo%20I" target="_blank" rel="noopener" aria-label="Abrir ubicación en Google Maps" data-reveal>
+            <img src="assets/img/mapa.jpg" width="1800" height="854" alt="Mapa de la zona: Polígono Industrial El Cáñamo I" loading="lazy">
+          </a>
+          <div class="horario" data-horario>
+            <h3 class="horario__title" data-reveal>Abrimos</h3>
+            <ul class="horario__list">
+              <li class="horario__row" data-day="1"><span class="horario__day">Lun</span><span>12:00–21:00</span><span>12:00–21:00</span></li>
+              <li class="horario__row" data-day="2"><span class="horario__day">Mar</span><span>12:00–21:00</span><span>12:00–21:00</span></li>
+              <li class="horario__row" data-day="3"><span class="horario__day">Mié</span><span>12:00–21:00</span><span>12:00–21:00</span></li>
+              <li class="horario__row" data-day="4"><span class="horario__day">Jue</span><span>12:00–21:00</span><span>12:00–21:00</span></li>
+              <li class="horario__row" data-day="5"><span class="horario__day">Vie</span><span>12:00–22:00</span><span>12:00–22:00</span></li>
+              <li class="horario__row" data-day="6"><span class="horario__day">Sáb</span><span>12:00–22:00</span><span>12:00–22:00</span></li>
+              <li class="horario__row" data-day="0"><span class="horario__day">Dom</span><span>09:00–16:00</span><span class="d-only">Cerrado</span></li>
+            </ul>
+          </div>
+        </div>
+        <form class="contact" id="contacto" novalidate data-contact-form data-reveal aria-labelledby="contacto-title">
+          <h2 class="contact__title" id="contacto-title">Envíanos tu opinión, duda o sugerencia</h2>
+          <div class="form__row">
+            <div class="field"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="given-name" required></div>
+            <div class="field"><label for="f-asunto">Asunto</label><input id="f-asunto" name="asunto" type="text" placeholder="Motivo de contacto" required></div>
+          </div>
+          <div class="form__row">
+            <div class="field"><label for="f-apellidos">Apellidos</label><input id="f-apellidos" name="apellidos" type="text" placeholder="Tus apellidos" autocomplete="family-name"></div>
+            <div class="field"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea></div>
+          </div>
+          <div class="form__row">
+            <div class="field"><label for="f-mail">Mail</label><input id="f-mail" name="mail" type="email" placeholder="tu@email.com" autocomplete="email" required></div>
+            <div class="field"><label for="f-tel">Teléfono</label><input id="f-tel" name="telefono" type="tel" placeholder="+34 000 000 000" autocomplete="tel"></div>
+          </div>
+          <div class="form__action">
+            <p class="form__status" role="status" aria-live="polite" data-form-status></p>
+            <button class="form__submit" type="submit"><span>Enviar</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Ubicación (móvil) -->
+    <section class="ubicacion m-only" id="ubicacion" aria-labelledby="ubi-title">
+      <a class="ubicacion__map" href="https://www.google.com/maps/search/?api=1&amp;query=Picoteo%27s%2C%20Calle%20Narciso%20Monturiol%2015%2C%20Pol%C3%ADgono%20Industrial%20El%20C%C3%A1%C3%B1amo%20I" target="_blank" rel="noopener" aria-label="Abrir ubicación en Google Maps">
+        <img src="assets/img/mapa.jpg" width="1800" height="854" alt="Mapa de la zona: Polígono Industrial El Cáñamo I" loading="lazy">
+      </a>
+      <div class="ubicacion__card">
+        <p class="eyebrow eyebrow--mono" data-reveal>Ubicación</p>
+        <h2 class="ubicacion__title" id="ubi-title" data-reveal>Dónde estamos</h2>
+        <p class="ubicacion__addr" data-reveal><img src="assets/svg/map-pin-m.svg" width="17" height="17" alt="">C/ Narciso Monturiol 15, Polígono Industrial El Cáñamo I</p>
+        <a class="ubicacion__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Calle%20Narciso%20Monturiol%2015%2C%20Pol%C3%ADgono%20Industrial%20El%20C%C3%A1%C3%B1amo%20I" target="_blank" rel="noopener" data-reveal>Cómo llegar</a>
+      </div>
+    </section>
+
+    <!-- ============ TÚ ELIGES EL PLAN ============ -->
+    <section class="plan d-only" id="plan" aria-labelledby="plan-title">
+      <div class="plan__bg" data-parallax-bg><img src="assets/img/plan-fondo.jpg" width="1024" height="1536" alt="" loading="lazy"></div>
+      <div class="plan__inner">
+        <h2 class="plan__title" id="plan-title" data-split>
+          <span class="line">Tú eliges el plan y</span>
+          <span class="line">nosotros cocinamos.</span>
+        </h2>
+        <div class="plan__card" data-reveal>
+          <p>Encarga tu pedido especial.<br>Por teléfono o en tienda.</p>
+          <a class="plan__phone" href="tel:+34955792208">
+            <img src="assets/svg/phone-marron.svg" width="20" height="20" alt="">
+            <span>95 579 22 08</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pedidos grandes (móvil) -->
+    <section class="plan-m m-only" id="plan-m" aria-labelledby="planm-title">
+      <img class="plan-m__img" src="assets/img/plan-fondo.jpg" width="1024" height="1536" alt="Mesa preparada con tortilla, pollo asado y bocadillo" loading="lazy" data-parallax-bg>
+      <div class="plan-m__veil" aria-hidden="true"></div>
+      <div class="plan-m__card" data-reveal>
+        <h2 class="plan-m__t1" id="planm-title">Tú eliges el sitio.</h2>
+        <p class="plan-m__t2">Nosotros cocinamos.</p>
+        <p class="plan-m__t3">Encarga tu pedido grande especial por teléfono o en tienda.</p>
+        <a class="btn btn--orange btn--block" href="tel:+34955792208">
+          <img src="assets/svg/phone-marron-m.svg" width="18" height="18" alt="">
+          <span>Llamar: 95 579 22 08</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ OPINIONES ============ -->
+    <section class="reviews grid-light d-only" aria-label="Opiniones de clientes">
+      <div class="reviews__viewport" data-marquee>
+        <div class="reviews__track" data-marquee-track></div>
+      </div>
+    </section>
+
+    <section class="opiniones m-only" aria-labelledby="op-title">
+      <h2 class="opiniones__title" id="op-title" data-reveal>Lo dicen quienes ya han probado</h2>
+      <div class="opiniones__list" data-opiniones></div>
+    </section>
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="footer">
+    <div class="footer__links d-only">
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#contacto">Opiniones y sugerencias</a>
+      <a href="#">Información legal</a>
+      <a href="#">Politicas de privacidad</a>
+    </div>
+
+    <div class="footer__m m-only">
+      <img class="footer__logo" src="assets/svg/logo.svg" width="176" height="41" alt="Picoteo's">
+      <div class="footer__mlinks">
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#contacto">Opiniones y sugerencias</a>
+        <a href="#">Información legal</a>
+        <a href="#">Políticas de privacidad</a>
+      </div>
+      <a class="footer__ig" href="https://www.instagram.com/picoteos/" target="_blank" rel="noopener"><img src="assets/svg/instagram.svg" width="20" height="20" alt="">@picoteos</a>
+    </div>
+
+    <p class="footer__copy"><span class="d-only">Picoteo´s 2015 SL. Todos los derechos reservados</span><span class="m-only">Picoteo’s 2015 SL. Todos los derechos reservados</span></p>
+
+    <div class="stickers grid-dark d-only" data-stickers>
+      <img class="sticker sticker--ajo" src="assets/svg/sticker-ajo.svg" width="229" height="240" alt="" data-depth="0.5">
+      <img class="sticker sticker--ajo-peq" src="assets/svg/sticker-ajo-peq.svg" width="138" height="121" alt="" data-depth="0.9">
+      <img class="sticker sticker--pollo" src="assets/svg/sticker-pollo.svg" width="310" height="403" alt="" data-depth="0.7">
+      <div class="sticker sticker--salero" data-depth="1.1"><img src="assets/svg/sticker-salero.svg" width="226" height="253" alt=""></div>
+      <div class="stickers__script" data-script-reveal><img src="assets/svg/logo-script.svg" width="782" height="225" alt="Picoteo's"></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/carta-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
